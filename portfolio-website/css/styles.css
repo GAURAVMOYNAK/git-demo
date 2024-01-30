@@ -1,0 +1,146 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Set a base font size and family */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0; /* Remove any default margin on the body */
+    padding: 0; /* Remove any default padding on the body */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change the color on hover */
+}
+
+/* Home section styles */
+#home {
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff; /* White */
+}
+
+/* Header styles inside the home section */
+header {
+    color: #333;
+}
+
+/* Portfolio section styles */
+#portfolio,
+#resume,
+#about,
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+/* Alternate background colors */
+#portfolio {
+    background-color: #222;
+    color: #fff;
+    height: 50%;
+    padding-bottom: 0;
+}
+
+#resume {
+    background-color: #ffffff; /* White */
+}
+
+#about {
+    background-color: #222; /* Darker color */
+    color: #fff; /* Text color for better contrast */
+}
+
+#contact {
+    background-color: #ffffff; /* White */
+}
+
+/* General section styles */
+section {
+    margin: 0; /* Remove margin on all sides of sections */
+}
+
+/* Container-fluid styles */
+.container-fluid {
+    padding: 0; /* Remove padding on container-fluid */
+}
+
+/* Add your custom styles for specific sections or components here */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin: 10px 0;
+    }
+}
+
+.filters {
+    margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
+    
+}
+
+#portfolioTabs .nav-link {
+    color: white !important;
+    text-decoration: none !important;
+    border: none;
+}
+
+#portfolioTabs .nav-link.active {
+    color: black !important;
+}
+
+.item-container {
+    padding-bottom: 2.5rem !important;
+}
+
+.item-container img {
+    margin-top: 2rem; /* Adjust the margin-top value as needed */
+    padding: 0.5rem; /* Add padding as needed */
+}
+
+/* Custom styles for the h6 titles within the tab content items */
+.item-title {
+    font-size: 1.3rem; /* 1.3rem is equivalent to 20.8px (assuming a base font size of 16px) */
+    font-weight: bold; /* or use lighter if you want an even lighter weight */
+    margin-bottom: 0.5rem;
+}
+
+.tab-pane p {
+    font-weight: 300; /* Adjust the font-weight value to make it lighter */
+}

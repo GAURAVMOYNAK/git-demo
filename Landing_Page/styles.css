@@ -1,0 +1,195 @@
+/* Custom CSS for font family and other styles */
+body {
+    padding-top: 56px;
+    margin: 0; /* Remove default margin */
+}
+
+html, body, .parallax-section {
+    height: 100%;
+}
+
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.parallax-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.navbar-nav a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-nav li:last-child {
+    margin-right: 20px;
+}
+
+
+
+@media (max-width: 767px) {
+    .slider_area .single_slider .slider_text h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+.home-container {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home h1,
+#home .lead,
+#home .button-87 {
+    margin: 15px 0;
+    
+}
+
+/* Add this CSS to your existing stylesheet */
+.button-87 {
+    margin-top: 15px;
+    margin-left: 10px; /* Adjust margin as needed */
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-87:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-87:active {
+    transform: scale(0.95);
+}
+
+
+/* Add this CSS to your existing stylesheet */
+.about-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-title h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Add this CSS to your existing stylesheet */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: white;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .right-section {
+        z-index: 1; /* Set a higher z-index for the right section to stack above the left section */
+    }
+
+    .left-section,
+    .right-section {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .about-image {
+        border-radius: 0; /* Remove border-radius on smaller screens if needed */
+    }
+
+    .about-text {
+        padding-left: 0; /* Remove left padding on smaller screens if needed */
+    }
+}
