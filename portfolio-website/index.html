@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <!-- Home Section -->
+        <section id="home" class="d-flex align-items-center justify-content-center text-center">
+            <header>
+                <h1>Your Name</h1>
+                <p class="lead">Web Developer</p>
+            </header>
+        </section>
+
+        <section id="portfolio" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="section-heading text-center col-md-12 mt-4">
+                        <h2 class="text-center mb-4"> <i>Featured </i> <strong>Portfolio</strong></h2>
+                    </div>
+                </div>
+                <div class="filters">
+                    <ul class="nav nav-tabs justify-content-center" id="portfolioTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="Projects-tab" data-bs-toggle="tab" href="#Projects" onclick="showContent('Projects')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Tools-tab" data-bs-toggle="tab" href="#Tools" onclick="showContent('Tools')">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Technology-tab" data-bs-toggle="tab" href="#Technology" onclick="showContent('Technology')">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="Responsive-tab" data-bs-toggle="tab" href="#Responsive" onclick="showContent('Responsive')">Responsive</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="SEO-tab" data-bs-toggle="tab" href="#SEO" onclick="showContent('SEO')">SEO</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Content for All -->
+                <div class="tab-pane fade " id="Projects">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <!-- Item 1 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/to-do-list.png" width="90" alt="Item 1 Image">
+                            <h6 class="item-title">To-Do List App</h6>
+                            <p class="fs-ms mb-0">
+                                A straightforward application for creating and managing to-do lists. Front-end developers would design the user interface for adding, editing, and marking tasks as completed.
+                            </p>
+                        </div>
+    
+                        <!-- Item 2 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-warning); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/weather-app.png" width="90" alt="Item 2 Image">
+                            <h6 class="item-title">Weather App</h6>
+                            <p class="fs-ms mb-0">
+                                An app that provides weather forecasts based on the user's location. Front-end developers would create the interface for displaying current conditions, forecasts, and interactive features.
+                            </p>
+                        </div>
+    
+                        <!-- Continue with similar structure for other items -->
+                        <!-- Item 3 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-danger); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/expense.png" width="90" alt="Item 3 Image">
+                            <h6 class="item-title">Expense Tracker</h6>
+                            <p class="fs-ms mb-0">
+                                An app to help users track their expenses. Front-end developers would design the interface for adding expenses, categorizing them, and generating simple visualizations of spending habits.
+                            </p>
+                        </div>
+    
+                        <!-- Item 4 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-success); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/fitness-gym.png" width="90" alt="Item 4 Image">
+                            <h6 class="item-title">Fitness Tracker</h6>
+                            <p class="fs-ms mb-0">
+                                An application for tracking daily physical activities and workouts. Front-end developers would work on creating the interface for logging exercises, setting fitness goals, and viewing progress.
+                            </p>
+                        </div>
+    
+                        <!-- Item 5 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-info); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/flash-cards (1).png" width="90" alt="Item 5 Image">
+                            <h6 class="item-title">Flashcard Quiz App</h6>
+                            <p class="fs-ms mb-0">
+                                An app for creating and using digital flashcards for learning. Front-end developers would design the card interface, quiz functionality, and features for tracking learning progress.
+                            </p>
+                        </div>
+    
+                        <!-- Item 6 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/cultural.png" width="90" alt="Item 6 Image">
+                            <h6 class="item-title">Language Learning App</h6>
+                            <p class="fs-ms mb-0">
+                                A simplified language learning app with basic vocabulary and quizzes. Front-end developers would focus on creating an engaging interface for language lessons, quizzes, and progress tracking.
+                            </p>
+                        </div>
+    
+                        <!-- Item 7 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-info); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/paid-media.png" width="90" alt="Item 7 Image">
+                            <h6 class="item-title">Social Media Dashboard</h6>
+                            <p class="fs-ms mb-0">
+                                A dashboard for managing and monitoring social media activities. Front-end developers would design the interface for displaying analytics, managing posts, and interacting with followers.
+                            </p>
+                        </div>
+    
+                        <!-- Item 8 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-success); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/mobile-app.png" width="90" alt="Item 8 Image">
+                            <h6 class="item-title">E-commerce Platform</h6>
+                            <p class="fs-ms mb-0">
+                                An online shopping platform with features like product browsing, cart management, and secure checkout. Front-end developers would focus on creating an intuitive and responsive user interface.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Tools">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <!-- Language 1: HTML5 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/html5.png" width="90" alt="HTML5 Image">
+                            <h6 class="item-title">HTML5</h6>
+                            <p class="fs-ms mb-0">
+                                HTML5 is the latest evolution of the standard markup language for creating web pages. It introduces new elements and attributes, providing better structure, multimedia support, and improved semantic elements for a more modern web experience.
+                            </p>
+                        </div>
+    
+                        <!-- Framework 1: React.js -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-warning); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/react.png" width="90" alt="React.js Image">
+                            <h6 class="item-title">React.js</h6>
+                            <p class="fs-ms mb-0">
+                                React.js is a JavaScript library developed by Facebook for building user interfaces, especially for single-page applications where components can be reused to manage complex UIs efficiently. It follows a declarative approach, making it easy to understand and maintain code.
+                            </p>
+                        </div>
+    
+    
+                        <!-- Language 2: CSS3 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-info); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/css3.png" width="90" alt="CSS3 Image">
+                            <h6 class="item-title">CSS3</h6>
+                            <p class="fs-ms mb-0">
+                                CSS3 is the latest version of Cascading Style Sheets, used for styling web pages. It introduces new features like transitions, animations, and advanced layout options, allowing developers to create more visually appealing and interactive designs.
+                            </p>
+                        </div>
+    
+                        <!-- Framework 2: Vue.js -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-success); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/vue.png" width="90" alt="Vue.js Image">
+                            <h6 class="item-title">Vue.js</h6>
+                            <p class="fs-ms mb-0">
+                                Vue.js is a progressive JavaScript framework used for building user interfaces. It is incrementally adoptable and can be integrated into other projects easily. Vue.js provides a simple and flexible structure for building robust applications.
+                            </p>
+                        </div>
+    
+                        <!-- Language 3: JavaScript ES6 -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/es6.png" width="90" alt="JavaScript ES6 Image">
+                            <h6 class="item-title">JavaScript ES6</h6>
+                            <p class="fs-ms mb-0">
+                                ECMAScript 6 (ES6) is the sixth edition of the ECMAScript standard. It brings significant enhancements to JavaScript, introducing features like arrow functions, classes, template literals, and destructuring assignments, making the language more expressive and powerful.
+                            </p>
+                        </div>
+    
+                        <!-- Framework 3: Bootstrap -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-warning); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/bootstrap.png" width="90" alt="Bootstrap Image">
+                            <h6 class="item-title">Bootstrap</h6>
+                            <p class="fs-ms mb-0">
+                                Bootstrap is a popular front-end framework that provides a set of pre-designed components and styles for building responsive and mobile-first websites. It includes a responsive grid system, typography, and a variety of components to streamline web development.
+                            </p>
+                        </div>
+    
+                        <!-- Language 4: Python -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-danger); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/python.png" width="90" alt="Python Image">
+                            <h6 class="item-title">Python</h6>
+                            <p class="fs-ms mb-0">
+                                Python is a versatile and high-level programming language known for its readability and simplicity. It is widely used for web development, data analysis, artificial intelligence, and more. Python emphasizes code readability and allows developers to express concepts in fewer lines of code.
+                            </p>
+                        </div>
+    
+                        <!-- Framework 4: Node.js -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-success); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/nodejs.png" width="90" alt="Node.js Image">
+                            <h6 class="item-title">Node.js</h6>
+                            <p class="fs-ms mb-0">
+                                Node.js is a server-side JavaScript runtime that allows developers to build scalable network applications. It uses an event-driven, non-blocking I/O model that makes it efficient and lightweight. Node.js is commonly used for building web servers and APIs.
+                            </p>
+                        </div>
+    
+                        <!-- Library 2: Next.js -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-info); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/nextjs.png" width="90" alt="Next.js Image">
+                            <h6 class="item-title">Next.js</h6>
+                            <p class="fs-ms mb-0">
+                                Next.js is a React framework for building static and dynamic web applications. It simplifies the development process and adds features like server-side rendering and automatic code splitting, enhancing performance and SEO optimization.
+                            </p>
+                        </div>
+    
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade " id="Technology">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    
+                        <!-- Framework 7: Django -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/django.png" width="90" alt="Django Image">
+                            <h6 class="item-title">Django</h6>
+                            <p class="fs-ms mb-0">
+                                Django is a high-level Python web framework that encourages rapid development and follows the model-view-template (MVT) architectural pattern. With a clean, pragmatic design, Django aims to make it easier to build web applications by providing a robust set of tools for handling tasks such as database access, URL routing, and template rendering. It promotes code reusability, modularity, and follows the "Don't Repeat Yourself" (DRY) principle, making it an excellent choice for developers looking for efficiency and maintainability in their projects.
+                            </p>
+                        </div>
+                            
+                        <!-- Framework 6: AngularJS -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/angularjs.png" width="90" alt="AngularJS Image">
+                            <h6 class="item-title">AngularJS</h6>
+                            <p class="fs-ms mb-0">
+                                AngularJS is a JavaScript-based open-source front-end web application framework. Developed and maintained by Google, it extends HTML with additional attributes to make web applications more dynamic. AngularJS simplifies the process of building complex and single-page applications by providing a structured framework for developers to work with. It offers features like two-way data binding, dependency injection, and modular development, making it a powerful choice for building dynamic and interactive web applications.
+                            </p>
+                        </div>
+
+    
+                        <!-- Framework 5: jQuery -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/jquery.png" width="90" alt="jQuery Image">
+                            <h6 class="item-title">jQuery</h6>
+                            <p class="fs-ms mb-0">
+                                jQuery is a fast and lightweight JavaScript library that simplifies HTML document traversal and manipulation, event handling, and animation. It is designed to make things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers.
+                            </p>
+                        </div>
+
+    
+                        <!-- Framework 5: Flask -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/flask.png" width="90" alt="Flask Image">
+                            <h6 class="item-title">Flask</h6>
+                            <p class="fs-ms mb-0">
+                                Flask is a lightweight and easy-to-extend web framework for Python. It is designed to be simple and modular, allowing developers to choose the components they need. Flask is commonly used for building web applications and APIs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="Responsive">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    
+                        
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/django.png" width="90" alt="Responsive Portfolio">
+                            <h6 class="item-title">Responsive Portfolio</h6>
+                            <p class="fs-ms mb-0">
+                                Designed and developed a personal portfolio website with a strong focus on responsive design. Utilized CSS3 media queries and Bootstrap's responsive grid system to ensure optimal user experience across various devices.</p>
+                        </div>
+                            
+                        <!-- Framework 6: AngularJS -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/angularjs.png" width="90" alt="Mobile App UI Image">
+                            <h6 class="item-title">Mobile App UI</h6>
+                            <p class="fs-ms mb-0">
+                                Contributed to the design and implementation of a mobile app user interface. Employed mobile-first principles, ensuring seamless interactions and a visually appealing layout on smartphones and tablets.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="SEO">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+    
+                        
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/django.png" width="90" alt="On-Page Optimization">
+                            <h6 class="item-title">On-Page Optimization</h6>
+                            <p class="fs-ms mb-0">
+                                My expertise includes implementing comprehensive on-page SEO strategies. Through meticulous keyword research, optimizing meta tags, and enhancing content structure, I improve website visibility and user experience.
+                            </p>
+                        </div>
+                            
+                        <!-- Framework 6: AngularJS -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter pb-2 item-container" style="color: var(--cz-primary); background-color: var(--cz-light);">
+                            <img class="inline-block mb-3 mt-3" src="images/angularjs.png" width="90" alt="Link BuildingImage">
+                            <h6 class="item-title">Link Building</h6>
+                            <p class="fs-ms mb-0">
+                                I excel in implementing effective link-building strategies to enhance website authority. Utilizing white-hat techniques, I acquire high-quality backlinks from reputable sources, boosting the website's search engine credibility.
+                        </p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="text-center">
+            <h2>Resume</h2>
+            <!-- Resume content goes here -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="text-center">
+            <h2>About Me</h2>
+            <!-- About content goes here -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2>Contact</h2>
+            <!-- Contact content goes here -->
+        </section>
+
+    </div>
+    
+
+    <!-- Bootstrap JS (optional, for certain components like the navbar and tab) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add your custom scripts here if needed -->
+
+</body>
+
+</html>
